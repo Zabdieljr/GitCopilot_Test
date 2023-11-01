@@ -1,4 +1,9 @@
 package com.bezahive.gitcopilot_test;
+// create class user with a constructor and getters and setters for the name and age and user id
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 
 public class VariableExample {
     // create static, instance and local variables and print them

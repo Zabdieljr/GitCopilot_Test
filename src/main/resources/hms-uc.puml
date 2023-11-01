@@ -1,0 +1,127 @@
+@startuml
+left to right direction
+
+
+
+actor Manager
+rectangle HotelManagementSystemManager {
+usecase "Login" as Login
+usecase "Logout" as Logout
+usecase "Search" as Search
+usecase "AddUser" as AddUser
+usecase "RemoveUser" as RemoveUser
+usecase "AddRoom" as AddRoom
+usecase "RemoveRoom" as RemoveRoom
+usecase "AddCustomer" as AddCustomer
+usecase "RemoveCustomer" as RemoveCustomer
+usecase "AddService" as AddService
+usecase "RemoveService" as RemoveService
+usecase "AddPayment" as AddPayment
+usecase "RemovePayment" as RemovePayment
+usecase "AddReservation" as AddReservation
+usecase "RemoveReservation" as RemoveReservation
+usecase "AddRoomType" as AddRoomType
+usecase "RemoveRoomType" as RemoveRoomType
+usecase "AddRoomStatus" as AddRoomStatus
+usecase "RemoveRoomStatus" as RemoveRoomStatus
+
+Manager --> Login
+Manager --> Logout
+Manager --> Search
+Manager --> AddUser
+Manager --> RemoveUser
+Manager --> AddRoom
+Manager --> RemoveRoom
+Manager --> AddCustomer
+Manager --> RemoveCustomer
+Manager --> AddService
+Manager --> RemoveService
+Manager --> AddPayment
+Manager --> RemovePayment
+Manager --> AddReservation
+Manager --> RemoveReservation
+Manager --> AddRoomType
+Manager --> RemoveRoomType
+Manager --> AddRoomStatus
+Manager --> RemoveRoomStatus
+
+
+
+
+
+}
+
+actor User
+rectangle HotelManagementSystem {
+
+    usecase "Login" as Login
+    usecase "Logout" as Logout
+    usecase "Search" as Search
+    usecase "Book" as Book
+    usecase "Cancel" as Cancel
+    usecase "CheckIn" as CheckIn
+    usecase "CheckOut" as CheckOut
+    usecase "AddCustomer" as AddCustomer
+    usecase "RemoveCustomer" as RemoveCustomer
+    usecase "AddService" as AddService
+    usecase "RemoveService" as RemoveService
+    usecase "AddPayment" as AddPayment
+    usecase "RemovePayment" as RemovePayment
+    usecase "AddReservation" as AddReservation
+    usecase "RemoveReservation" as RemoveReservation
+    usecase "AddRoomStatus" as AddRoomStatus
+    usecase "RemoveRoomStatus" as RemoveRoomStatus
+    usecase "AddRoomService" as AddRoomService
+    usecase "RemoveRoomService" as RemoveRoomService
+    usecase "AddRoomPayment" as AddRoomPayment
+    usecase "RemoveRoomPayment" as RemoveRoomPayment
+    usecase "AddRoomReservation" as AddRoomReservation
+    usecase "RemoveRoomReservation" as RemoveRoomReservation
+User --> Login
+User --> Logout
+User --> Search
+User --> Book
+User --> Cancel
+User --> CheckIn
+User --> CheckOut
+User --> AddCustomer
+User --> RemoveCustomer
+User --> AddService
+User --> RemoveService
+User --> AddPayment
+User --> RemovePayment
+User --> AddReservation
+User --> RemoveReservation
+User --> AddRoomStatus
+User --> RemoveRoomStatus
+User --> AddRoomService
+User --> RemoveRoomService
+User --> AddRoomPayment
+User --> RemoveRoomPayment
+User --> AddRoomReservation
+User --> RemoveRoomReservation
+
+
+}
+
+actor Customer
+rectangle HotelManagementSystemCustomer {
+usecase "Login" as Login
+usecase "Logout" as Logout
+usecase "Search" as Search
+usecase "Book" as Book
+usecase "Cancel" as Cancel
+usecase "RoomServiceOrder" as RoomService
+usecase "Payment" as Payment
+usecase "RoomServiceOrderCancel" as RoomServiceCancel
+Customer --> Login
+Customer --> Logout
+Customer --> Search
+Customer --> Book
+Customer --> Cancel
+Customer --> RoomService
+Customer --> Payment
+Customer --> RoomServiceCancel
+
+}
+@enduml
